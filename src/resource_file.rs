@@ -5,7 +5,7 @@ use log::{debug, info, trace};
 
 #[derive(BinRead, Debug)]
 #[br(little)]
-struct GenericCharacterObj {
+pub struct GenericCharacterObj {
     pose_data: FilePtr32<PoseData>,
     sprite_data: FilePtr32<SpriteData>,
 }
